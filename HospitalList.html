@@ -1,0 +1,155 @@
+<!doctype html>
+<html>
+<head>
+	<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 160px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 150%;
+  margin-left: -80px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+</style>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Light Theme</title>
+<link href="simpleGridTemplate.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Header -->
+  <header class="header">
+    <h4 class="logo">ANISH GUPTA&nbsp;</h4>
+  </header>
+  <!-- Hero Section -->
+
+
+    <div class="column">
+      <table width="200" border="0">
+  <tbody>
+	  <img src="donate1.jpeg" alt="HELP DONATE!">
+	  <img src="heart.jpeg" alt="heart">	  
+	  <img src="emoji.jpeg" alt="thumb's up">
+  </tbody>
+</table>
+    </div>
+	<div class="column"><h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+      </div>
+	<div class="column"><h3>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</h3>
+      </div>
+	
+  </section>
+	
+	
+
+  <!-- Stats Gallery Section -->
+  <div class="gallery">
+    <div class="thumbnail"> <a href="#"><img src="kaiser.jpeg" alt="kaiser logo" width="2000" class="cards"/></a>
+      <h4>Kaiser Permanente, Santa Clara&nbsp;</h4>
+	  <h3 class="tag">What we need:&nbsp; </h3>
+      
+	<div class="popup" onclick="myFunction()">Masks for Adults
+  <span class="popuptext" id="myPopup"> Quantity: 200 Material: Cotton </span>
+</div>
+	<p>&nbsp;</p>
+	<div class="popup" onClick="myFunction()">&nbsp;</div>
+<div class="popup" onclick="myFunction()">Masks for Kids
+</div>
+	  <p>&nbsp;</p>
+		<div class="popup" onclick="myFunction()">Ventilator
+</div>
+		
+<script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+</script>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="palo.jpeg" alt="" width="2000" class="cards"/></a>
+      <h4>Palo Alto Hospital&nbsp;</h4>
+      
+		
+	  <h3 class="tag">What we need:&nbsp; </h3>
+      <p class="tag">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Doctor Gowns</p>
+      <p class="tag">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Tissues </p>
+      <p class="tag">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Hand Sanitizer&nbsp;</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="judes.jpeg" alt="" width="2000" class="cards"/></a>
+      <h4>St. Judes Hospital&nbsp;</h4>
+      <h3 class="tag">What we need: </h3>
+      <p class="tag"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Doctor Gowns</p>
+      <p class="tag">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Tissues</p>
+      <p class="tag">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Hand Sanitizer&nbsp;</p>
+    </div>
+    <div class="thumbnail"> <a href="#"><img src="stanford.jpeg" alt="" width="2000" class="cards"/></a>
+      <h4>Stanford Hospital&nbsp;</h4>
+      <h3 class="tag">What we need: </h3>
+		<p class="tag"> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Doctor Gowns</p>
+      <p class="tag">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Tissues</p>
+      <p class="tag">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  Hand Sanitizer&nbsp;</p>
+      <p class="text_column">&nbsp;</p>
+    </div>
+  </div>
+  
+  <!-- Footer Section -->
+  <footer id="contact">
+    <p class="hero_header">GET IN TOUCH WITH ME</p>
+    <div class="button">EMAIL ME </div>
+  </footer>
+</div>
+<!-- Main Container Ends -->
+</body>
+</html>
